@@ -8,30 +8,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav-link home" id="home">
-    <!-- Navigation Bar -->
-        <header class="primary-header">
-            <nav id="nav-menu">
-                <a href="index.html" class="logo">Rajeev Ranjan Mishra</a>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- <li>
-                        <a href="#">Resume</a>
-                    </li> -->
-                </ul>
-                <a href="Images/Rajeev-Ranjan-Mishra-Resume (1).pdf" target="_blank" class="button">Resume</a>
-            </nav>
-        </header>
-    </div>
-    <!-- Home section -->
-    <!-- About section -->
-    <!-- Skills section -->
-    <!-- Projects section -->
-    <!-- Contact section -->
+    <body>
+        <!-- Navbar section -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home" class="nav-link home">Home</a></li>
+                <li><a href="#about" class="nav-link about">About</a></li>
+                <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link contact">Contact</a></li>
+                <li><a href="#" class="nav-link resume">Resume</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Home section -->
+        <section id="home">
+            <img src="path/to/professional/photo" alt="Professional Photo" class="home-img">
+            <h1 id="user-detail-name">Your Name</h1>
+            <p id="user-detail-intro">Formal Introduction</p>
+        </section>
+    
+        <!-- About section -->
+        <section id="about" class="about section">
+            <h2>About Me</h2>
+            <p>Your About Me information goes here.</p>
+        </section>
+    
+        <!-- Skills section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-card">
+                <img src="path/to/skills/image" alt="Skills Image" class="skills-card-img">
+                <h3 class="skills-card-name">Skill Name</h3>
+            </div>
+        </section>
+    
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="path/to/project/image" alt="Project Image">
+                <h3 class="project-title">Project Title</h3>
+                <p class="project-description">Project Description</p>
+                <p class="project-tech-stack">Tech Stack Used</p>
+                <a href="link/to/github/repository" class="project-github-link">GitHub Repository</a>
+                <a href="link/to/deployed/project" class="project-deployed-link">Deployed Link</a>
+            </div>
+        </section>
+    
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li id="contact-github"><a href="link/to/github/profile">GitHub Profile</a></li>
+                <li id="contact-linkedin"><a href="link/to/linkedin/profile">LinkedIn Profile</a></li>
+                <li id="contact-phone">Phone Number</li>
+                <li id="contact-email">Email Address</li>
+            </ul>
+        </section>
+    
+        <!-- Resume section -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <button id="resume-button-1">Download Resume</button>
+        </section>
+    
+        <!-- Button to download resume in Home/About section -->
+        <button id="resume-button-2">Download Resume</button>
+    
+        <!-- Scripts section -->
+        <script src="path/to/script.js"></script>
+    </body>
 
 </body>
 </html>

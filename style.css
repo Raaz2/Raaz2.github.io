@@ -1,4 +1,62 @@
-.primary-header{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 10px;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .project {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .project h2 {
+    margin-top: 0;
+  }
+  .project p {
+    margin-bottom: 10px;
+  }
+  .project img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+/* .primary-header{
     background:url(Images/adi-goldstein-mDinBvq1Sfg-unsplash.jpg) no-repeat center;
     position: fixed;
     top: 0;
@@ -72,4 +130,4 @@ header.active .button{
 header.active .button:hover{
     background-color: #151515;
 }
-
+ */
