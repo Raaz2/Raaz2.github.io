@@ -182,3 +182,54 @@ button {
   margin: 0 auto 50px auto;
 }
 
+/* for typing change */
+.text {
+  font-weight: 800;
+  font-size: 24px;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.text #typed-text{
+  color: #2196F3;
+  -webkit-animation: blink .7s infinite;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.text{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about_para{
+  font-family: cursive;
+  color:#1c8194;
+}
+.home-img{
+  filter: drop-shadow(2px 4px 6px black);
+  height:200px ;
+  width:200px
+}
+#about-div{
+  justify-content: center;
+  gap: 3rem;
+  display: flex;
+}
+#about>h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid goldenrod;
+    width: 10%;
+    margin: auto;
+    padding-bottom: 5px;
+}
