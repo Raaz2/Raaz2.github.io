@@ -233,3 +233,11 @@ button {
     margin: auto;
     padding-bottom: 5px;
 }
+@media screen and (max-width: 760px) {
+  #about-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
