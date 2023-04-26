@@ -115,11 +115,35 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(Images/leone-venter-VieM9BdZKFo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* filter: invert(1); */
+  
+}
+#home {
+  justify-content: left;
+  gap: 20px;
+
+}
+#home_child{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 148px;
+  align-items: center;
+}
+#home_gif{
+  height: 300px;
+  filter: brightness(80%);
+  
+  
 }
 
 /* Style the user details */
 #user-detail-name {
-  font-size: 3rem;
+  font-size: 2rem;
+  filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -127,6 +151,7 @@
 #user-detail-intro {
   font-size: 1.5rem;
   color: #777;
+  filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
   margin-bottom: 2rem;
 }
 
