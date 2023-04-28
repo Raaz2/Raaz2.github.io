@@ -147,7 +147,7 @@
     margin-bottom: 0.5rem;
   }
   
-  #user-detail-intro {
+  #userDet{
     font-size: 1.5rem;
     color: #777;
     filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
