@@ -200,7 +200,9 @@
    #resume-button-2 {
     background-color: #2196F3;
   }
-  
+  #resume-link-2{
+    background-color: red;
+  }
   #resume-button-2 {
     display: block;
     margin: 0 auto 50px auto;
