@@ -270,6 +270,15 @@
   #skills{
     background: url(Images/General/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
   }
+  #skills1{
+    background: url("Images/General/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+  }
+  #skills1-child-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    border-radius: 50px;
+  }
 
   #skills-child-div {
     display: grid;
@@ -307,6 +316,17 @@
     border-bottom: 2px solid goldenrod;
     width: 10%;
     margin: auto;
+    padding-bottom: 5px;
+  }
+  #skills1>div>h2{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid goldenrod;
+    width: 15%;
+    margin:20px auto;
     padding-bottom: 5px;
   }
 
