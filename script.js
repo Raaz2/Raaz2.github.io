@@ -56,5 +56,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// opening resume
+let drive = document
+  .querySelector(".Drivegoogle")
+  .addEventListener("click", openDrive);
 
+function openDrive() {
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/1N3tNE0Ai02YyNkWwTxUoJ8baLBJ0617t/view?usp=sharing")
+  );
+}
+
+let drive2 = document
+  .querySelector(".googleDrive")
+  .addEventListener("click", openDrive2);
+
+function openDrive2() {
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/1N3tNE0Ai02YyNkWwTxUoJ8baLBJ0617t/view?usp=sharing")
+  );
+}
 
