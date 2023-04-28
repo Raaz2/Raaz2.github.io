@@ -143,6 +143,59 @@
         </div>
     </section>
 
+
+
+
+
+      <!------------------- Github Stats and Calender Section ---------------------->
+
+      <section class="react-activity-calendar">
+        <div class="max-width">
+            <h2 class="title">My GitHub Contribution</h2>
+        </div>
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "Raaz2");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "Raaz2", { responsive: true });
+        </script>
+
+        <br><br><br><br>
+
+        <div class="regular">
+            <div class="git-card">
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=Raaz2&theme=react&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+                    alt="stat-card" />
+            </div>
+            <div class="git-card" id="most-lang">
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs?username=Raaz2&theme=react&show_icons=true&locale=en&layout=compact"
+                    alt="raaz2" />
+            </div>
+            <div class="git-card">
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=Raaz2&theme=react&count_private=true"
+                    alt="top_languages" />
+            </div>
+        </div>
+    </section>
+
+    <!-- github Section -->
+
+
+
+
+
     <!-- Contact section -->
     <!-- <section id="contact">
         <h2>Contact Me</h2>

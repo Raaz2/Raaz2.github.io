@@ -331,14 +331,14 @@
   }
 
   @media screen and (max-width: 760px) {
-    #skills-child-div {
+    #skills-child-div  ,  #skills1-child-div{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
     }
   }
   @media screen and (max-width: 550px) {
-    #skills-child-div {
+    #skills-child-div ,  #skills1-child-div {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
