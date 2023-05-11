@@ -8,6 +8,9 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar section -->
@@ -141,7 +144,7 @@
 
 
     <!-- Projects section -->
-    <div><h2  id="projectHead" style="text-align: center;">Projects</h2></div>
+    <div id="projectTop" > <h2  id="projectHead" style="text-align: center;">Projects</h2></div>
     <section id="projects" >
         <!-- project 1 -->
         <div class="project-card">
@@ -163,45 +166,25 @@
             <a href="https://grand-capybara-67d44a.netlify.app/" class="project-deployed-link" target="_blank">Live</a>
         </div>
 
-        <!-- duplicating trying  -->
-        <div class="project-card">
-            <img src="Images/ProjectImages/BeautyHub.png" alt="Project Image">
-            <h3 class="project-title">BeautyHub (Clone of MyGlamm.com)</h3>
-            <p class="project-description">An E-Commerce website for cosmetics and beauty products.</p>
-            <p class="project-tech-stack">HTML,CSS,JavaScript</p>
-            <a href="https://github.com/Raaz2/null-oatmeal-5458/tree/main/BeautyHub" class="project-github-link" target="_blank">Code</a>
-            <a href="https://dancing-tulumba-7dcce5.netlify.app/"  target="_blank" class="project-deployed-link">Live</a>
-        </div>
-
-          <!-- project 2 -->
+          <!-- project 3 -->
           <div class="project-card">
             <img src="Images/ProjectImages/VIPBAZAAR.png" alt="Project Image">
-            <h3 class="project-title">VIPBAZAAR (Clone of JCrew.com)</h3>
-            <p class="project-description">An E-Commerce website for all types of clothes.</p>
-            <p class="project-tech-stack">HTML,CSS,JavaScript</p>
-            <a href="https://github.com/Raaz2/healthy-hour-8159/tree/main/VIPBAZAAR"  target="_blank" class="project-github-link">Code</a>
-            <a href="https://grand-capybara-67d44a.netlify.app/" class="project-deployed-link" target="_blank">Live</a>
+            <h3 class="project-title">CHAVANNI(Stock Broker System)</h3>
+            <p class="project-description">This project is a stock broker system that allows customers to invest and trade in shares. It has two users - brokers and customers.</p>
+            <p class="project-tech-stack">Java, JDBC, MySQL</p>
+            <a href="https://github.com/Raaz2/nonchalant-wound-7973"  target="_blank" class="project-github-link">Code</a>
+            <a href="https://grand-capybara-67d44a.netlify.app/" class="project-deployed-link" target="_blank">Presentation</a>
         </div>
 
-          <!-- project 3 -->
-          <!-- <div class="project-card">
-            <img src="path/to/project/image" alt="Project Image">
-            <h3 class="project-title">Project Title</h3>
-            <p class="project-description">Project Description</p>
-            <p class="project-tech-stack">Tech Stack Used</p>
-            <a href="link/to/github/repository" class="project-github-link" target="_blank">GitHub Repository</a>
-            <a href="link/to/deployed/project" class="project-deployed-link" target="_blank">Deployed Link</a>
-        </div> -->
-
           <!-- project 4 -->
-          <!-- <div class="project-card">
-            <img src="path/to/project/image" alt="Project Image">
-            <h3 class="project-title">Project Title</h3>
-            <p class="project-description">Project Description</p>
-            <p class="project-tech-stack">Tech Stack Used</p>
-            <a href="link/to/github/repository" class="project-github-link" target="_blank">GitHub Repository</a>
-            <a href="link/to/deployed/project" class="project-deployed-link" target="_blank">Deployed Link</a>
-        </div> -->
+          <div class="project-card">
+            <img src="Images/ProjectImages/busMenu.png" alt="Project Image">
+            <h3 class="project-title">SAFAR(Bus Reservation Management Portal)</h3>
+            <p class="project-description">Safar is a web-based application that enables users to book bus tickets online. The system will allow users book available buses and make payments securely.</p>
+            <p class="project-tech-stack">Java, MySQL, SpringBoot, Spring Data JPA, Swagger, HTML, CSS, JavaScript</p>
+            <a href="https://github.com/AbhayKumarVishwakarma/Safar" class="project-github-link" target="_blank">Code</a>
+            <a href="https://dancing-tulumba-7dcce5.netlify.app/"  target="_blank" class="project-deployed-link">Presentation</a>
+        </div>
     </section>
 
 
@@ -251,31 +234,46 @@
         </div>
     </section>
 
-    <!-- github Section -->
-
-
-
-
-
-    <!-- Contact section -->
-    <!-- <section id="contact">
-        <h2>Contact Me</h2>
-        <ul>
-            <li id="contact-github"><a href="https://github.com/Raaz2">Raaz2</a></li>
-            <li id="contact-linkedin"><a href="https://www.linkedin.com/in/rajeev-ranjan-mishra/">Rajeev Ranjan Mishra</a></li>
-            <li id="contact-phone">+91 87898 10841</li>
-            <li id="contact-email">rajeevranjanmishra4339@gmail.com</li>
-        </ul>
-    </section> -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <ul>
-          <li id="contact-github"><i class="fa fa-github"></i><a href="https://github.com/Raaz2" target="_blank">Raaz2</a></li>
-          <li id="contact-linkedin"><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/rajeev-ranjan-mishra/">Rajeev Ranjan Mishra</a></li>
-          <li id="contact-phone"><i class="fa fa-phone"></i> +91 87898 10841</li>
-          <li id="contact-email"><i class="fa fa-envelope"></i> rajeevranjanmishra4339@gmail.com</li>
-        </ul>
+        <div class="contactChild">
+            <ul>
+                <li id="contact-email"><i class="fa fa-envelope"></i> rajeevranjanmishra4339@gmail.com</li>
+                <li id="contact-phone"><i class="fa fa-phone"></i> +91 87898 10841</li>
+                <li id="contact-linkedin"><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/rajeev-ranjan-mishra/">Rajeev Ranjan Mishra</a></li>
+              <li id="contact-github"><i class="fa fa-github"></i><a href="https://github.com/Raaz2" target="_blank">Raaz2</a></li>
+            </ul>
+    
+    
+             <!-- email -->
+          <div class="column right">
+            <!-- <div class="text">Message me</div> -->
+            <form action="#">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                </div>
+                <div class="button-area">
+                    <button onclick="sendEmail()" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    
+        </div>
+       
       </section>
+
+     
 
       <footer>
         <p>Made with <i class="fa fa-heart" style="font-size:24px;color:red"></i> by Rajeev</p>

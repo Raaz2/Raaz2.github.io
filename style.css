@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  width: 100vw;
+}
 
 /* Navigation bar */
 #nav-menu {
@@ -171,18 +174,15 @@
     background-color: #f1f1f1;
   }
   
-  #skills, #projects, #contact, #resume {
+  #skills, #contact, #resume {
     background-color: #fff;
   }
   
-  #skills .skills-card,
-  #projects .project-card {
+  #skills .skills-card{
     margin: 20px;
   }
   
-  .project-card img {
-    width: 100%;
-  }
+  
   
   /* Buttons */
   button {
@@ -196,16 +196,6 @@
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
-  }
-   #resume-button-2 {
-    background-color: #2196F3;
-  }
-  #resume-link-2{
-    background-color: red;
-  }
-  #resume-button-2 {
-    display: block;
-    margin: 0 auto 50px auto;
   }
   
   /* for typing change */
@@ -320,6 +310,19 @@
     margin: auto;
     padding-bottom: 5px;
   }
+ #projectHead{
+
+   font-size: 28px;
+   font-weight: bold;
+   font-family: cursive;
+   text-align: center;
+   margin-bottom: 30px;
+   border-bottom: 2px solid goldenrod;
+   width: 10%;
+   margin: auto;
+   padding-bottom: 5px;
+   padding-top:30px ;
+  }
   #skills1>div>h2{
     font-size: 28px;
     font-weight: bold;
@@ -348,174 +351,6 @@
   }
   
 
-
-  /* Project section styles */
-
-  /* Projects section styles */
-#projects {
-  margin-top: 50px;
-}
-
-
-.project-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
-  padding: 20px;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-/* 
-  flex: 0 0 auto;
-  margin-right: 20px; */
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-title {
-  color: #333;
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-.project-description {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 10px;
-}
-
-.project-tech-stack {
-  color: #999;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.project-github-link,
-.project-deployed-link {
-  color: #333;
-  font-size: 16px;
-  position: absolute;
-  bottom: 20px;
-}
-
-.project-github-link {
-  left: 20px;
-}
-
-.project-deployed-link {
-  right: 20px;
-}
-
-#projectHead{
-  font-size: 28px;
-  font-weight: bold;
-  font-family: cursive;
-  text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid goldenrod;
-  width: 10%;
-  margin: auto;
-  padding-bottom: 5px;
-  margin-top: 45px;
-}
-
-/* Media Queries */
-@media (min-width: 576px) {
-  #projects {
-    margin-top: 100px;
-  }
-  
-  .project-card {
-    width: 45%;
-    margin: 25px;
-    padding: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .project-card {
-    width: 30%;
-  }
-}
-
-/* Carousel Styles */
-.carousel-container {
-  position: relative;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 20px;
-}
-
-.carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 8px;
-}
-
-.carousel::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.carousel-card {
-  margin-right: 20px;
-  flex: 0 0 auto;
-}
-
-.carousel-card:last-child {
-  margin-right: 0;
-}
-
-.carousel-image {
-  border-radius: 10px;
-  width: 100%;
-}
-
-.carousel-title {
-  color: #333;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.carousel-description {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-top: 10px;
-}
-
-.carousel-tech-stack {
-  color: #999;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.carousel-link {
-  color: #333;
-  font-size: 14px;
-  margin-top: 20px;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #333;
-  padding: 8px 15px;
-  border-radius: 30px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.carousel-link:hover {
-  background-color: #333;
-  color: #fff;
-}
 
 
 /* github calendar */
@@ -580,8 +415,10 @@
 
 #contact ul {
   list-style: none;
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
+  width: 50%;
+  line-height: 55px;
 }
 
 #contact li {
@@ -627,7 +464,17 @@
   border-bottom: 2px solid goldenrod;
   padding-bottom: 5px;
 }
-
+.contactChild{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+  height: 362px;
+  width: 75%;
+  margin: auto;
+}
 
 #contact>h2{
   font-size: 28px;
@@ -641,7 +488,7 @@
   margin: auto;
 }
 
-#contact>ul{
+.contactChild>ul{
   list-style: none;
   padding: 0;
   margin: 0;
@@ -676,6 +523,9 @@
   grid-template-columns: repeat(2, minmax(357px, 1fr));
   justify-items: center;
   align-items: center;
+
+  margin: auto;
+  background:url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
 }
 
 .project-card {
@@ -689,12 +539,12 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .project-card img {
   width: 100%;
   max-height: 250px;
-  object-fit: cover;
   object-position: center;
 }
 
@@ -735,4 +585,163 @@
 .project-deployed-link:hover {
   background-color: #0b5ed7;
 }
+/* resume btn 2 */
+#resume-button-2 {
+  text-align: center;
+  margin-top: 20px;
+}
 
+#resume-button-2 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#resume-button-2 a:hover {
+  background-color: #0056b3;
+}
+
+
+
+ /* Styles for the form */
+ .column.right {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f2f2f2; */
+  border-radius: 4px;
+  height: 258px;
+}
+
+.column.right .text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column.right .fields {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.column.right .field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.column.right .field.name,
+.column.right .field.email {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.column.right input[type="text"],
+.column.right input[type="email"],
+.column.right textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.column.right .button-area {
+  text-align: right;
+}
+
+.column.right button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.column.right button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+ /* Define the animation */
+ @keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply the animation to project cards */
+.project-card {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+/* Style for the project card container */
+.project-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 450px;
+  width: 50em;
+  transition: transform 0.3s ease;
+  padding: 30px;
+}
+
+/* Style for the project card image */
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Style for the project card title */
+.project-card h3.project-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style for the project card description */
+.project-card p.project-description {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Heebo', sans-serif;
+}
+
+/* Style for the project card tech stack */
+.project-card p.project-tech-stack {
+  font-size: 14px;
+  margin-bottom: 10px;
+  /* font-weight: bolder; */
+  font-family: cursive;
+}
+
+/* Style for the project card links */
+.project-card a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #000;
+ 
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+#projectTop{
+  background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
+}

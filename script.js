@@ -80,5 +80,12 @@ function openDrive2() {
 }
 
 
-
+function sendEmail() {
+  var name = document.querySelector('input[placeholder="Name"]').value;
+  var subject = document.querySelector('input[placeholder="Subject"]').value;
+  var body = document.querySelector('textarea[placeholder="Message.."]').value;
+  var recipient = "rajeevranjanmishra4339@gmail.com";
+  var mailtoLink = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  window.location.href = mailtoLink;
+}
 
