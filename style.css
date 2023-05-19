@@ -757,7 +757,8 @@ body{
     align-items: center;
   
     margin: auto;
-    background:url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
+    background:url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
+    justify-content: center;
   }
 
   #home_child {
