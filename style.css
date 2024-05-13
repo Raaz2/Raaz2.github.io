@@ -191,6 +191,8 @@ body{
     justify-content: center;
     gap: 3rem;
     display: flex;
+    align-items: center;
+    height: 100vh;
   }
   #about>h2 {
       font-size: 28px;
