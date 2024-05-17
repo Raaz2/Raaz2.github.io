@@ -27,6 +27,7 @@
                 <li><a href="#home" class="nav-link home">Home</a></li>
                 <li><a href="#about" class="nav-link about">About</a></li>
                 <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                <li><a href="#skills1" class="nav-link skills1">Tech-Stack</a></li>
                 <li><a href="#projects" class="nav-link projects">Projects</a></li>
                 <li><a href="#contact" class="nav-link contact">Contact</a></li>
                 <li id="resume-button-1" class="nav-link resume">
@@ -41,7 +42,7 @@
     <section id="home">
         <div id="home_child">
             <div class="home-1stcol">
-                <h1 id="user-detail-name">Hello, my name is Rajeev Ranjan Mishra</h1>
+                <h1 id="user-detail-name">Hi, My name is Rajeev</h1>
                 <p id="userDet">and I am a Java backend developer.</p>
                 <div id="resume-button-2">
                     <a href="Images/Rajeev-Ranjan-Mishra-Resume.pdf" class="Drivegoogle"
@@ -59,12 +60,12 @@
 
     <!-- About section -->
     <section id="about" class="about section">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <div id="about-div">
             <div><img src="Images/General/IMG_1775.jpg" alt="Professional Photo" class="home-img"></div>
             <div class="text">
-                My name is Rajeev Ranjan Mishra and I am a
-                <span id="typed-text"></span>
+                <!-- My name is Rajeev Ranjan Mishra and I am a
+                <span id="typed-text"></span> -->
 
                 <p class="about_para" id="user-detail-intro">"As a Java backend developer, expertise lies in Java,
                     MySQL, JDBC,
@@ -117,7 +118,7 @@
         <div id="skills1-child-div">
             <div class="skills-card">
                 <img src="Images/TechStacks/icons8-java-48.png" alt="Skills Image" class="skills-card-img">
-                <h3 class="skills-card-name">JAVA</h3>
+                <h3 class="skills-card-name">Java</h3>
             </div>
             <div class="skills-card">
                 <img src="Images/TechStacks/icons8-spring-boot-48.png" alt="Skills Image" class="skills-card-img">
@@ -136,12 +137,28 @@
                 <h3 class="skills-card-name">JDBC</h3>
             </div>
             <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=python" alt="Skills Image" class="skills-card-img">
+                <h3 class="skills-card-name">Python</h3>
+            </div>
+            <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=flask" alt="Skills Image" class="skills-card-img">
+                <h3 class="skills-card-name">Flask</h3>
+            </div>
+            <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=mongodb" alt="Skills Image" class="skills-card-img">
+                <h3 class="skills-card-name">MongoDB</h3>
+            </div>
+            <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=react" alt="Skills Image" class="skills-card-img">
+                <h3 class="skills-card-name">React</h3>
+            </div>
+            <div class="skills-card">
                 <img src="Images/TechStacks/html-logo.png" alt="Skills Image" class="skills-card-img">
-                <h3 class="skills-card-name">HTML5</h3>
+                <h3 class="skills-card-name">HTML</h3>
             </div>
             <div class="skills-card">
                 <img src="Images/TechStacks/CSS_logo_PNG1.png" alt="Skills Image" class="skills-card-img">
-                <h3 class="skills-card-name">CSS3</h3>
+                <h3 class="skills-card-name">CSS</h3>
             </div>
             <div class="skills-card">
                 <img src="Images/TechStacks/JavaScript_logo_PNG3.png" alt="Skills Image" class="skills-card-img">
@@ -154,76 +171,88 @@
 
 
     <!-- Projects section -->
-    <div id="projectTop">
-        <h2 id="projectHead" style="text-align: center;">Projects</h2>
-    </div>
+
     <section id="projects">
-        <!-- project 1 -->
-        <div class="project-card">
-            <img src="Images/ProjectImages/chavanni.png" alt="Project Image">
-            <h3 class="project-title">CHAVANNI (Stock Broker System)</h3>
-            <p class="project-description">Chavanni is a stock broker system enabling customers to invest and trade in
-                shares. With two user roles - brokers and customers, users can create trading accounts to initiate
-                buying or selling stocks.</p>
-            <p class="project-tech-stack"> <b>Tech Stack: Java | JDBC | MySQL</b></p>
-            <a href="https://github.com/Raaz2/nonchalant-wound-7973" target="_blank"
-                class="project-github-link">Github</a>
-            <a href="https://drive.google.com/file/d/1rJoWg-g7VIzwe7wZI3M-GiDXAyOgZfr3/view?usp=sharing"
-                class="project-deployed-link" target="_blank">Presentation</a>
+        <div id="projectTop">
+            <h2 id="projectHead" style="text-align: center;">Projects</h2>
         </div>
 
-        <!-- project 2 -->
-        <div class="project-card">
-            <img src="Images/ProjectImages/busMenu.png" alt="Project Image">
-            <h3 class="project-title">SAFAR (Bus Reservation Management Portal)</h3>
-            <p class="project-description">Safar is a web-based application that enables users to book bus tickets
-                online. The system will allow users book available buses and make payments securely.</p>
-            <p class="project-tech-stack"><b>Tech Stack: Java | MySQL | SpringBoot | Spring Data JPA | Swagger | HTML | CSS | JavaScript</b></p>
-            <a href="https://github.com/Raaz2/Safar-BusReservationSystem-" class="project-github-link"
-                target="_blank">Github</a>
-            <a href="https://drive.google.com/file/d/1gqXw9lkgjfubUcC1yiDZUIzbA6ifR8z1/view?usp=sharing" target="_blank"
-                class="project-deployed-link">Presentation</a>
-        </div>
+        <div id="project-card-box">
+            <!-- project 1 -->
+            <div class="project-card">
+                <img src="Images/ProjectImages/chavanni.png" alt="Project Image">
+                <h3 class="project-title">CHAVANNI (Stock Broker System)</h3>
+                <p class="project-description">Chavanni is a stock broker system enabling customers to invest and trade
+                    in
+                    shares. With two user roles - brokers and customers, users can create trading accounts to initiate
+                    buying or selling stocks.</p>
+                <p class="project-tech-stack"> <b>Tech Stack: Java | JDBC | MySQL</b></p>
+                <a href="https://github.com/Raaz2/nonchalant-wound-7973" target="_blank"
+                    class="project-github-link">Github</a>
+                <a href="https://drive.google.com/file/d/1rJoWg-g7VIzwe7wZI3M-GiDXAyOgZfr3/view?usp=sharing"
+                    class="project-deployed-link" target="_blank">Presentation</a>
+            </div>
 
-        <!-- project 3 -->
-        <div class="project-card">
-            <img src="Images/ProjectImages/BeautyHub.png" alt="Project Image">
-            <h3 class="project-title">BeautyHub (Clone of MyGlamm.com)</h3>
-            <p class="project-description">BeautyHub is an e-commerce website for cosmetics and beauty products. Where
-                one can purchase beauty products after registering and login.</p>
-            <p class="project-tech-stack"><b>Tech Stack: HTML | CSS | JavaScript </b></p>
-            <a href="https://github.com/Raaz2/Beauty-Hub-MyGlamm-Clone/tree/main" class="project-github-link"
-                target="_blank">Github</a>
-            <a href="https://dancing-tulumba-7dcce5.netlify.app/" target="_blank" class="project-deployed-link">Live</a>
-        </div>
+            <!-- project 2 -->
+            <div class="project-card">
+                <img src="Images/ProjectImages/busMenu.png" alt="Project Image">
+                <h3 class="project-title">SAFAR (Bus Reservation Management Portal)</h3>
+                <p class="project-description">Safar is a web-based application that enables users to book bus tickets
+                    online. The system will allow users book available buses and make payments securely.</p>
+                <p class="project-tech-stack"><b>Tech Stack: Java | MySQL | SpringBoot | Spring Data JPA | Swagger |
+                        HTML |
+                        CSS | JavaScript</b></p>
+                <a href="https://github.com/Raaz2/Safar-BusReservationSystem-" class="project-github-link"
+                    target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1gqXw9lkgjfubUcC1yiDZUIzbA6ifR8z1/view?usp=sharing"
+                    target="_blank" class="project-deployed-link">Presentation</a>
+            </div>
 
-        <!-- project 4 -->
-        <div class="project-card">
-            <img src="Images/ProjectImages/VIPBAZAAR.png" alt="Project Image">
-            <h3 class="project-title">VIPBAZAAR (Clone of JCrew.com)</h3>
-            <p class="project-description">VipBazaar is a website for purchasing life fashion wear for men and women
-                both. User can register and login to the website. And then can buy the products after adding to
-                watchlist.</p>
-            <p class="project-tech-stack"><b>Tech Stack: HTML | CSS | JavaScript</b></p>
-            <a href="https://github.com/Raaz2/healthy-hour-8159/tree/main" target="_blank"
-                class="project-github-link">Github</a>
-            <a href="https://grand-capybara-67d44a.netlify.app/" class="project-deployed-link" target="_blank">Live</a>
-        </div>
+            <!-- project 3 -->
+            <div class="project-card">
+                <img src="Images/ProjectImages/BeautyHub.png" alt="Project Image">
+                <h3 class="project-title">BeautyHub (Clone of MyGlamm.com)</h3>
+                <p class="project-description">BeautyHub is an e-commerce website for cosmetics and beauty products.
+                    Where
+                    one can purchase beauty products after registering and login.</p>
+                <p class="project-tech-stack"><b>Tech Stack: HTML | CSS | JavaScript </b></p>
+                <a href="https://github.com/Raaz2/Beauty-Hub-MyGlamm-Clone/tree/main" class="project-github-link"
+                    target="_blank">Github</a>
+                <a href="https://dancing-tulumba-7dcce5.netlify.app/" target="_blank"
+                    class="project-deployed-link">Live</a>
+            </div>
 
-        <!-- project 5 -->
-        <div class="project-card">
-            <img src="Images/ProjectImages/PortfolioManagement.png" alt="Project Image">
-            <h3 class="project-title">Portfolio Management System</h3>
-            <p class="project-description">Portfolio Management System is a web application designed to streamline the
-                management of portfolios and projects.</p>
-            <p class="project-tech-stack"><b>Tech Stack: Python | Flask | React JS | CSS3 | MongoDB | Generative AI</b></p>
-            <a href="https://github.com/Raaz2/Portfolio_Management_Application" target="_blank"
-                class="project-github-link">Github</a>
-            <a href="https://super-strudel-8799e2.netlify.app/" class="project-deployed-link" target="_blank">Live</a>
-        </div>
+            <!-- project 4 -->
+            <div class="project-card">
+                <img src="Images/ProjectImages/VIPBAZAAR.png" alt="Project Image">
+                <h3 class="project-title">VIPBAZAAR (Clone of JCrew.com)</h3>
+                <p class="project-description">VipBazaar is a website for purchasing life fashion wear for men and women
+                    both. User can register and login to the website. And then can buy the products after adding to
+                    watchlist.</p>
+                <p class="project-tech-stack"><b>Tech Stack: HTML | CSS | JavaScript</b></p>
+                <a href="https://github.com/Raaz2/healthy-hour-8159/tree/main" target="_blank"
+                    class="project-github-link">Github</a>
+                <a href="https://grand-capybara-67d44a.netlify.app/" class="project-deployed-link"
+                    target="_blank">Live</a>
+            </div>
 
+            <!-- project 5 -->
+            <div class="project-card">
+                <img src="Images/ProjectImages/PortfolioManagement.png" alt="Project Image">
+                <h3 class="project-title">Portfolio Management System</h3>
+                <p class="project-description">Portfolio Management System is a web application designed to streamline
+                    the
+                    management of portfolios and projects.</p>
+                <p class="project-tech-stack"><b>Tech Stack: Python | Flask | React JS | CSS3 | MongoDB | Generative
+                        AI</b>
+                </p>
+                <a href="https://github.com/Raaz2/Portfolio_Management_Application" target="_blank"
+                    class="project-github-link">Github</a>
+                <a href="https://super-strudel-8799e2.netlify.app/" class="project-deployed-link"
+                    target="_blank">Live</a>
+            </div>
+        </div>
     </section>
-
 
 
 
@@ -274,6 +303,7 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <div class="contactChild">
+            <div>
             <ul>
                 <li id="contact-email"><i class="fa fa-envelope"></i> rajeevranjanmishra4339@gmail.com</li>
                 <li id="contact-phone"><i class="fa fa-phone"></i> +91 87898 10841</li>
@@ -282,7 +312,7 @@
                 <li id="contact-github"><i class="fa fa-github"></i><a href="https://github.com/Raaz2"
                         target="_blank">Raaz2</a></li>
             </ul>
-
+            </div>
 
             <!-- email -->
             <div class="column right">
@@ -300,7 +330,7 @@
                         <input type="text" placeholder="Subject" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
                     </div>
                     <div class="button-area">
                         <button onclick="sendEmail()" type="submit">Send</button>

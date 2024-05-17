@@ -1,380 +1,328 @@
-*{
+/* Reset and Body Styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body{
+
+body {
   width: 100vw;
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
-/* Navigation bar */
-#nav-menu {
-    background-color: #333;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  #nav-menu .hamburger {
-    display: none;
-  }
-  
-  #nav-menu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-  }
-  
-  #nav-menu li {
-    margin-left: 20px;
-  }
-  
-  #nav-menu a {
-    font-family:sans-serif;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-
-  #nav-menu a:hover {
-    background-color: #333;
-    font-size: large;
-    color: tomato;
- 
-  }
-  #logo a {
-    font-size: 24px;
-    font-weight: bold;
-    font-family:sans-serif;
-  }
-  
-  #logo a:hover {
-    color: pink;
-    font-size: 26px;
-    background-color: #333;
-  }
-  
-  
-  /* Home section  */
-  /* Set the home section to fill the remaining viewport height after the navbar */
-  #home {
-    /* height: calc(100vh - 80px); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(Images/General/leone-venter-VieM9BdZKFo-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* filter: invert(1); */
-    
-  }
-  #home {
-    justify-content: left;
-    gap: 20px;
-  
-  }
-  #home_child{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: 148px;
-    align-items: center;
-  }
-  #home_gif{
-    height: 300px;
-  }
-  
-  /* Style the user details */
-  #user-detail-name {
-    font-size: 2rem;
-    filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  #userDet{
-    font-size: 1.5rem;
-    color: #777;
-    filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
-    margin-bottom: 2rem;
-  }
-  
-  /* Style the home image */
-  .home-img {
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  
-  /* Sections */
-  section {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  #about {
-    background-color: #f1f1f1;
-    height: 100vh;
-  }
-  
-  #skills, #contact, #resume {
-    background-color: #fff;
-  }
-  
-  #skills .skills-card{
-    margin: 20px;
-  }
-  
-  
-  
-  /* Buttons */
-  button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  /* for typing change */
-  .text {
-    font-weight: 800;
-    font-size: 20px;
-    color: black;
-    font-family: sans-serif;
-    
-  }
-  
-  .text #typed-text{
-    color: #2196F3;
-    -webkit-animation: blink .7s infinite;
-    animation: blink .7s infinite;
-  }
-  
-  @keyframes blink {
-    50% {
-        opacity: 0;
-    }
-  }
-  
-  .text{
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .about_para{
-    font-family:sans-serif;
-    color:#1c8194;
-  }
-  .home-img{
-    filter: drop-shadow(2px 4px 6px black);
-    height:200px ;
-    width:200px
-  }
-  #about-div{
-    justify-content: center;
-    gap: 3rem;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
-  #about>h2 {
-      font-size: 28px;
-      font-weight: bold;
-      font-family:sans-serif;
-      text-align: center;
-      margin-bottom: 30px;
-      border-bottom: 2px solid goldenrod;
-      width: 10%;
-      margin: auto;
-      padding-bottom: 5px;
-  }
-  @media screen and (max-width: 760px) {
-    #about-div {
-      display: flex;
-      flex-direction: column;
-      margin-top: 50px;
-    }
-  }
-  
-  /* skills section */
-
-  #skills{
-    background: url(Images/General/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
-  }
-  #skills1{
-    background: url("Images/General/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
-  }
-  #skills1-child-div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    border-radius: 50px;
-  }
-
-  #skills-child-div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .skills-card {
-    text-align: center;
-    color: black;
-    font-size: 20px;
-  }
-  
-   .skills-card-img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 10px;
-  } 
-  /* skills animation  */
-  .skills-card {
-    text-align: center;
-    transition: transform 0.2s ease-out;
-  }
-  
-  .skills-card:hover {
-    transform: scale(1.1);
-  }
-  
-  #skills>div>h2{
-    font-size: 28px;
-    font-weight: bold;
-    font-family:sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid goldenrod;
-    width: 10%;
-    margin: auto;
-    padding-bottom: 5px;
-  }
- #projectHead{
-
-   font-size: 28px;
-   font-weight: bold;
-   font-family:sans-serif;
-   text-align: center;
-   margin-bottom: 30px;
-   border-bottom: 2px solid goldenrod;
-   width: 10%;
-   margin: auto;
-   padding-bottom: 5px;
-   padding-top:30px ;
-  }
-  #skills1>div>h2{
-    font-size: 28px;
-    font-weight: bold;
-    font-family:sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid goldenrod;
-    width: 15%;
-    margin:20px auto;
-    padding-bottom: 5px;
-  }
-
-  @media screen and (max-width: 760px) {
-    #skills-child-div  ,  #skills1-child-div{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
-  }
-  @media screen and (max-width: 550px) {
-    #skills-child-div ,  #skills1-child-div {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
-    }
-  }
-  
-
-
-
-/* github calendar */
-.react-activity-calendar {
-  background-color:  #f6f8fa;;
-  padding: 50px 0;
-  filter: invert(1);
-}
-
-.max-width {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title {
-  text-align: center;
+section h2,
+#about h2,
+#projects h2,
+#skills h2,
+#contact h2 {
   font-size: 2.5rem;
-  margin-bottom: 50px;
-}
-
-.calendar {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
-.git-card img {
-  max-width: 100%;
-}
-
-.regular {
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 28px;
+  font-weight: bold;
+  font-family: sans-serif;
   text-align: center;
-  max-width: 1200px;
-  margin: 50px auto 0;
+  margin-bottom: 30px;
+  border-bottom: 2px solid goldenrod;
+  width: max-content;
+  margin: 20px auto;
+  padding-bottom: 5px;
 }
 
-.regular::before {
-  content: "";
+/* Navigation Bar */
+#nav-menu {
+  background-color: #333;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#nav-menu .hamburger {
+  display: none;
+}
+
+#nav-menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#nav-menu li {
+  margin-left: 20px;
+}
+
+#nav-menu a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+#nav-menu a:hover {
+  background-color: #444;
+  color: tomato;
+}
+
+#logo a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#logo a:hover {
+  color: pink;
+}
+
+/* Home Section */
+#home {
+  /* height: calc(100vh - 80px); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(Images/General/leone-venter-VieM9BdZKFo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home_child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+#home_gif {
+  height: 300px;
+}
+
+#user-detail-name {
+  font-size: 2rem;
+  filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
+  margin: 1rem 0 0.5rem;
+}
+
+#userDet {
+  font-size: 1.5rem;
+  color: #777;
+  filter: drop-shadow(2px 4px 6px rgb(3, 3, 27));
+  margin-bottom: 2rem;
+}
+
+.home-img {
+  border-radius: 50%;
+  filter: drop-shadow(2px 4px 6px black);
+  height: 200px;
+  width: 200px;
+}
+
+/* General Section Styles */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+
+/* About Section */
+#about {
+  color: #1c8194;
+  background-color: #f1f1f1;
+  /* Adjusted color for text */
+}
+
+.about_para {
+  font-weight: bold;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 28px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid goldenrod;
+  width: 15%;
+  margin: 20px auto;
+  padding-bottom: 5px;
+}
+
+
+#about p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-family: sans-serif;
+  /* Added font family */
+}
+
+/* Animation for About Section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about h2 {
+  animation: fadeIn 1s ease-out;
+}
+
+#about p {
+  animation: fadeIn 2s ease-out;
+}
+
+
+
+/* Skills Section */
+#skills {
+  background: url(Images/General/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
+}
+
+#skills1 {
+  background: url("Images/General/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.skills-card {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  transition: transform 0.2s ease-out;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills1-child-div,
+#skills-child-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  border-radius: 50px;
+}
+
+.skills-card:hover {
+  transform: scale(1.1);
+}
+
+.skills-card-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+/* Projects Section */
+#projects-box,
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 390px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.project-description,
+.project-tech-stack {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-github-link,
+.project-deployed-link {
   display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d6efd;
+  transition: all 0.2s ease-in-out;
 }
 
-.git-card {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 20px;
+.project-github-link:hover,
+.project-deployed-link:hover {
+  background-color: #0b5ed7;
 }
 
-/* contact section */
+/* Contact Section */
 #contact {
   background-color: #f9f9f9;
-  padding: 50px;
-  text-align: center;
-}
-
-#contact h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #333;
 }
 
 #contact ul {
   list-style: none;
-  /* padding: 0; */
-  margin: 0;
-  width: 50%;
   line-height: 55px;
+  padding: 0;
+  text-align: left;
+  height: 27rem;
 }
 
 #contact li {
@@ -409,79 +357,130 @@ body{
   color: #0077b5;
 }
 
-
-/* calendar title */
-.title{
-  font-size: 28px;
-  font-weight: bold;
-  font-family:sans-serif;
-  text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid goldenrod;
-  padding-bottom: 5px;
-}
-.contactChild{
+.contactChild {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #f9f9f9;
-  padding: 50px;
+  gap: 50px;
+}
+
+/* GitHub Calendar */
+.react-activity-calendar {
+  background-color: #f6f8fa;
+  padding: 50px 0;
+  filter: invert(1);
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
   text-align: center;
-  height: 362px;
-  width: 75%;
-  margin: auto;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
-#contact>h2{
-  font-size: 28px;
-  font-weight: bold;
-  font-family:sans-serif;
+.calendar {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.git-card img {
+  max-width: 100%;
+}
+
+.regular {
   text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid goldenrod;
-  padding-bottom: 5px;
-  width: 20%;
-  margin: auto;
+  max-width: 1200px;
+  margin: 50px auto 0;
 }
 
-.contactChild>ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: initial;
-  margin-top: 50px;
-  line-height: 25px;
-  margin: auto;
-  padding: 100px;
+.git-card {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
 }
 
-/* footer */
- footer {
+/* Footer */
+footer {
   background-color: skyblue;
   text-align: center;
   height: 50px;
   width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 20px;
-  margin: auto;
-  justify-content: center;
-  display: flex;
-  font-family:sans-serif;
   font-weight: 800;
+}
+
+/* Resume Button */
+#resume-button-2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#resume-button-2 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#resume-button-2 a:hover {
+  background-color: #0056b3;
+}
+
+/* Form Styles */
+.column.right {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.column.right .text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 150%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 
 
 
 #projects {
-  margin-top: auto;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(357px, 1fr));
-  justify-items: center;
-  align-items: center;
-
-  margin: auto;
-  background:url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
+  background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
 }
 
 .project-card {
@@ -541,99 +540,6 @@ body{
 .project-deployed-link:hover {
   background-color: #0b5ed7;
 }
-/* resume btn 2 */
-#resume-button-2 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-#resume-button-2 a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-#resume-button-2 a:hover {
-  background-color: #0056b3;
-}
-
-
-
- /* Styles for the form */
- .column.right {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  /* background-color: #f2f2f2; */
-  border-radius: 4px;
-  height: 258px;
-}
-
-.column.right .text {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.column.right .fields {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.column.right .field {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.column.right .field.name,
-.column.right .field.email {
-  width: 50%;
-  padding-right: 10px;
-}
-
-.column.right input[type="text"],
-.column.right input[type="email"],
-.column.right textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.column.right .button-area {
-  text-align: right;
-}
-
-.column.right button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.column.right button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-
-
- /* Define the animation */
- @keyframes fade-in {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Apply the animation to project cards */
-.project-card {
-  animation: fade-in 0.5s ease-in-out;
-}
 
 /* Style for the project card container */
 .project-card {
@@ -643,8 +549,7 @@ body{
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  height: 450px;
-  width: 50em;
+  height: 500px;
   transition: transform 0.3s ease;
   padding: 30px;
 }
@@ -676,7 +581,7 @@ body{
   font-size: 14px;
   margin-bottom: 10px;
   /* font-weight: bolder; */
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
 /* Style for the project card links */
@@ -691,20 +596,28 @@ body{
 
 .project-card a:hover {
   color: #000;
- 
+
 }
 
 .project-card:hover {
   transform: scale(1.05);
 }
 
-#projectTop{
-  background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
+#project-card-box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(357px, 1fr));
+  gap: 20px;
+
 }
 
+/* Media query part */
 
+@media only screen and (min-width: 351px) and (max-width: 750px) {
 
-@media only screen and (min-width: 451px) and (max-width: 972px) {
+  section, footer{
+    width: 175%;
+  }
+
   /* medium screen sizes  */
   #nav-menu .hamburger {
     display: block;
@@ -721,7 +634,7 @@ body{
     align-items: center;
     display: none;
   }
-  
+
   #nav-menu ul.active {
     display: flex;
     width: 100%;
@@ -730,7 +643,7 @@ body{
   #nav-menu li {
     margin: 10px 0;
   }
-  
+
   #nav-menu .hamburger .bar {
     width: 30px;
     height: 4px;
@@ -739,28 +652,33 @@ body{
     border-radius: 10px;
     transition: transform 0.3s ease;
   }
-  
+
   #nav-menu .hamburger.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-8px, 4px);
   }
-  
+
   #nav-menu .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   #nav-menu .hamburger.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-8px, -4px);
   }
 
-  #projects {
-    margin-top: auto;
+  #about {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  #project-card-box {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-items: center;
     align-items: center;
-  
     margin: auto;
-    background:url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
+    background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
     justify-content: center;
   }
 
@@ -772,7 +690,7 @@ body{
     align-items: center;
   }
 
-  .contactChild{
+  .contactChild {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -789,15 +707,19 @@ body{
     line-height: 35px;
   }
 
-  .column.right{
+  .column.right {
     display: none;
   }
-
-
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 10px) and (max-width: 350px) {
+
   /* Small screen sizes  */
+
+  section, footer {
+    width: 165%;
+  }
+
   #nav-menu .hamburger {
     display: block;
     cursor: pointer;
@@ -813,7 +735,7 @@ body{
     align-items: center;
     display: none;
   }
-  
+
   #nav-menu ul.active {
     display: flex;
     width: 100%;
@@ -822,7 +744,7 @@ body{
   #nav-menu li {
     margin: 10px 0;
   }
-  
+
   #nav-menu .hamburger .bar {
     width: 30px;
     height: 4px;
@@ -831,30 +753,29 @@ body{
     border-radius: 10px;
     transition: transform 0.3s ease;
   }
-  
+
   #nav-menu .hamburger.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-8px, 4px);
   }
-  
+
   #nav-menu .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   #nav-menu .hamburger.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-8px, -4px);
   }
 
-  #projects {
+
+  #project-card-box {
     margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
-  
     margin: auto;
-    background:url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
+    background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
   }
-
 
   #home_child {
     display: flex;
@@ -864,7 +785,7 @@ body{
     align-items: center;
   }
 
-  .contactChild{
+  .contactChild {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -886,8 +807,24 @@ body{
     display: flex;
     flex-direction: column;
   }
-  .column.right{
+
+  .column.right {
     display: none;
   }
 }
 
+
+@media screen and (max-width: 760px) {
+  #skills-child-div  ,  #skills1-child-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #skills-child-div ,  #skills1-child-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
