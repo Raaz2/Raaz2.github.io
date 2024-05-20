@@ -611,14 +611,13 @@ button:hover {
 }
 
 /* Media query part */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
-@media only screen and (min-width: 351px) and (max-width: 750px) {
-
-  section, footer{
-    width: 175%;
+  section, footer {
+    width: 215%;
   }
-
-  /* medium screen sizes  */
+  /* CSS rules for mobile devices */
+  /* Small screen sizes  */
   #nav-menu .hamburger {
     display: block;
     cursor: pointer;
@@ -665,10 +664,115 @@ button:hover {
     transform: rotate(45deg) translate(-8px, -4px);
   }
 
-  #about {
+  #project-card-box {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+
+    margin: auto;
+    background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
+  }
+
+
+  #home_child {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 148px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactChild {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #contact ul {
+    list-style: none;
+    margin: 0;
+    line-height: 35px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+  }
+
+  .column.right {
+    display: none;
+  }
+
+  #skills-child-div, #skills1-child-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    border-radius: 50px;
+  }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* CSS rules for iPads and tablets */
+  
+  section, footer {
+    width: 215%;
+  }
+  /* CSS rules for mobile devices */
+  /* Small screen sizes  */
+  #nav-menu .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #nav-menu ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  #nav-menu ul.active {
+    display: flex;
+    width: 100%;
+  }
+
+  #nav-menu li {
+    margin: 10px 0;
+  }
+
+  #nav-menu .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  #nav-menu .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 4px);
+  }
+
+  #nav-menu .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-menu .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -4px);
   }
 
   #project-card-box {
@@ -677,105 +781,11 @@ button:hover {
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     align-items: center;
+
     margin: auto;
-    background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
-    justify-content: center;
+    background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg")
   }
 
-  #home_child {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 148px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contactChild {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 50px;
-    text-align: center;
-    margin: auto;
-  }
-
-  #contact ul {
-    list-style: none;
-    margin: 0;
-    line-height: 35px;
-  }
-
-  .column.right {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 10px) and (max-width: 350px) {
-
-  /* Small screen sizes  */
-
-  section, footer {
-    width: 165%;
-  }
-
-  #nav-menu .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  #nav-menu ul {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #333;
-    width: 200px;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-  }
-
-  #nav-menu ul.active {
-    display: flex;
-    width: 100%;
-  }
-
-  #nav-menu li {
-    margin: 10px 0;
-  }
-
-  #nav-menu .hamburger .bar {
-    width: 30px;
-    height: 4px;
-    margin: 6px 0;
-    background-color: #fff;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-
-  #nav-menu .hamburger.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-8px, 4px);
-  }
-
-  #nav-menu .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #nav-menu .hamburger.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-8px, -4px);
-  }
-
-
-  #project-card-box {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-    background: url("https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg");
-  }
 
   #home_child {
     display: flex;
@@ -811,20 +821,26 @@ button:hover {
   .column.right {
     display: none;
   }
-}
 
-
-@media screen and (max-width: 760px) {
-  #skills-child-div  ,  #skills1-child-div{
+  #skills-child-div, #skills1-child-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 40px;
+    border-radius: 50px;
   }
 }
-@media screen and (max-width: 550px) {
-  #skills-child-div ,  #skills1-child-div {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Optionally show hamburger icon */
+  /* section, footer {
+    width: 130%;
+  } */
+
+  #logo a{
+    font-size: 11px;
   }
+
+
 }
+
